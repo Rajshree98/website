@@ -1,0 +1,440 @@
+<!DOCTYPE html >
+<html style="overflow:hidden;" class="w-100 h-100 p-0">
+
+<head>
+    <title>
+        #include
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link href="css/particle.css" rel="stylesheet">
+    <style>
+        .w-100 {
+            width: 100%;
+        }
+        .page-footer
+            {
+            background-color: 000032;
+            height: 70px;
+            margin-top: 71px;
+            color: white;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-bottom: 0px;
+
+            }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+
+        .m-0 {
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .nav {
+
+            font-size: 20px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .nav-container {
+            padding-top: 1% !important;
+
+        }
+
+        .max-100 {
+            max-width: 100%;
+        }
+
+        .nav-element {
+            text-align: center;
+            padding: 1% !important;
+        
+        }
+
+
+
+        .head-name {
+            font-size: 77px;
+            padding-left: 0;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .hash-logo {
+            width: 68px;
+            display: inline block;
+            float: right;
+            position: relative;
+
+            left: 13%;
+            top: 16px;
+
+        }
+
+        .newsfeed {
+
+            /*background-color: rgba(255, 255, 255, 0.6);*/
+            text-align: center;
+            display: inherit;
+
+        }
+
+
+
+        .sliderbut {
+            display: inline block;
+
+            font-size: 100px;
+            font-weight: bold;
+            color: darkcyan;
+
+        }
+
+        .newsfeed-header {
+            height: 40%;
+            text-align: center;
+        }
+        div.active
+        {
+            border:2px solid white;
+        }
+
+        a {
+            color: white;
+        }
+
+        div.nav-element:hover {
+            border: 2px solid white;
+        }
+
+        div.active {
+            border: 2px solid white;
+        }
+
+        .hashinclude {
+            position: absolute;
+            left: 37%;
+            top: 20%;
+
+        }
+
+        .tagline {
+            font-size: 23px;
+            position: relative;
+            left: 33%;
+        }
+
+        .footer {
+            font-size: 20px;
+            padding: 2%;
+        }
+
+        .par-footer {
+            position: relative;
+            top: 7%;
+            max-width: 100%;
+            background-color: #000033;
+            min-height: 6%;
+            color: white;
+
+        }
+
+        .leftslider,
+        .rightslider {
+            padding-top: 5% !important;
+        }
+
+
+        .leftchild {
+            float: right;
+        }
+
+        .rightchild {
+            float: left;
+        }
+
+        @media screen and (max-width: 425px) {
+            .nav {
+                font-size: 14px;
+                padding-left: 8%;
+                padding-top: 2%;
+            }
+            .hashinclude {
+
+                position: absolute;
+                left: 32%;
+                font-size: 41px;
+            }
+            .hash-logo {
+                width: 42px;
+                position: relative;
+                left: 5%;
+                top: 40px;
+            }
+            .tagline {
+                font-size: 16px;
+                position: relative;
+                left: 17%;
+                top: 17px;
+            }
+            .par-footer {
+                position: absolute;
+                top: 93.5%;
+                min-width: 102%;
+            }
+            .leftchild,
+            .rightchild {
+                float: none;
+            }
+
+
+        }
+
+        @media screen and (max-width:375px) {
+
+            .hashinclude {
+                position: absolute;
+                left: 30%;
+                font-size: 37px;
+                top: 24%;
+            }
+            .hash-logo {
+                width: 34px;
+                position: relative;
+                left: 0;
+                top: 34px;
+
+            }
+            .tagline {
+                font-size: 16px;
+                position: relative;
+                left: 10%;
+            }
+            .leftslider,
+            .rightslider {
+                padding-top: 0% !important;
+            }
+
+        }
+    </style>
+
+    <script>
+
+
+    </script>
+</head>
+
+<body style="overflow:hidden;" class="w-100 h-100 p-0">
+    <div id="particles-js" class="max-100"></div>
+    <div class="container max-100 w-100 h-100 p-0 ">
+
+        <div class="row w-100 p-0">
+            <div class="col m6 offset-m6 s12 nav-container">
+                <div class="row nav">
+                    <!-- <div id="home" class="col m4 s4 nav-element">
+                        <a>HOME</a>
+                    </div>
+                    <div id="about" class="col m4 s4 nav-element">
+                        <a href="teampagefinalwithoutphp.html">TEAM</a>
+                    </div>
+
+                    <div id="contact" class="col m4 s4 nav-element">
+                        <a href ="ContactUsPage.html">CONTACT US</a>
+                    </div> -->
+                    <div class="col m3 nav-element active">HOME</div>
+                    
+                    <div class="col m3 nav-element "><a href="teampagefinalwithoutphp.html">TEAM</a></div>
+                    <div class="col m3 nav-element"><a href="ContactUsPage.html">CONTACT US</a></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col m12 s12 head-name">
+                <div class="row">
+                    <div class="col m4 s4">
+                        <img src="logo2.png" class="hash-logo">
+                    </div>
+                    <div class="col m8 s8">
+                        <div class="hashinclude"> include
+                            <>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m12 s12 tagline ">
+                        The Techno-learning Club of SGSITS
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row w-100 newsfeed-header">
+            <div class="col m3 s12 w-100 leftslider">
+                <i class="large material-icons leftchild sliderbut" onclick="left()" id="leftSlide">keyboard_arrow_left
+
+                </i>
+            </div>
+            <div class="col m6 s12 w-100 newsfeed" align="center">
+                <div>
+                    <div id="page1">
+                        <img src="./event7.png" width="57%">
+                    </div>
+
+                    <div id="page2" style="display:none;">
+                        <img src="./event.png" width="57%">
+                    </div>
+
+                    <div id="page3" style="display:none;">
+                        <img src="./event1.png" width="57%">
+                    </div>
+                    <div id="page4" style="display:none;">
+                        <img src="./event2.png" width="57%">
+                    </div>
+
+                    <div id="page5" style="display:none;">
+                        <img src="./event3.png" width="57%">
+                    </div>
+
+                    <div id="page6" style="display:none;">
+                        <img src="./event4.png" width="57%">
+                    </div>
+                    <div id="page7" style="display:none;">
+                        <img src="./event5.png" width="57%">
+                    </div>
+
+                    <div id="page8" style="display:none;">
+                        <img src="./event8.png" width="57%">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col m3 s12 rightslider ">
+                <i class="large material-icons rightchild sliderbut" onclick="right()" id="rightSlide"> keyboard_arrow_right</i>
+            </div>
+        </div>
+
+        <!-- <div class="row m-0 par-footer">
+
+            <div class="col m4 hide-on-small-only">
+                <div class="footer">MICROSOFT CAMPUS CLUB</div>
+            </div>
+            <div class="col m1 s3 center-align">
+                <a href="http://www.facebook.com" target="_blank">
+                    <i class="fa fa-facebook" style="font-size:26px;padding:7%;"></i>
+                </a>
+            </div>
+            <div class="col m1 s3 center-align">
+                <a href="http://www.instagram.com" target="_blank">
+                    <i class="fa fa-instagram" style="font-size:27px;padding:7%;"></i>
+                </a>
+            </div>
+            <div class="col m1 s3 center-align">
+                <a href="http://www.linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin center-align" style="font-size:27px;padding:7%;"></i>
+                </a>
+            </div>
+            <div class="col m1 s3 center-align">
+                <a href="http://www.medium.com" target="_blank">
+                    <i class="fa fa-medium " style="font-size:27px;padding:7%;"></i>
+                </a>
+            </div>
+            <div class="col m4 hide-on-small-only">
+                <div style="float:right;" class="footer">MOZZILA CAMPUS CLUB</div>
+            </div>
+
+        </div>
+ -->
+
+
+<!--  <div class="row" style="margin-top:20px;">
+    <div class="col s12">
+<div class="page-footer">
+    <div class="col s4">
+Microsoft Campus Club</div>
+
+<div class="col s4">
+    <div class="row">
+    <div class="col s4"><a href="https://www.instagram.com/include._/"><i class="fab fa-instagram"style="font-size:30px;margin-left:0px;"></i></a></div>
+    <div class="col s4"><a href="https://www.facebook.com/hashincludesgsits/?fb_dtsg_ag=AdyTEJJvUhmXt2OjTwlH19wYfjoJLmxMk1ZvCSmae1VScg%3AAdzB4JnzSVXSolypthQycWpy_jGJXLSoYS1iJKG4PtB7Zw"><i class="fab fa-facebook" style="font-size:30px;margin-left:0px;"></i></a></div>
+    <div class="col s4"><a href="https://www.linkedin.com/company/include-sgsits/"><i class="fab fa-linkedin"style="font-size:30px;margin-left:0px;"></i></a></div>
+</div>
+</div>
+<div class="col s4 right-align">
+    Mozilla Campus Club
+</div></div>
+    </div>
+</div> -->
+    <script> 
+
+       
+        //Slider for the events...start
+
+        var max = 8;
+        var index = 1;
+
+        var x = document.getElementById("leftSlide");
+        var y = document.getElementById("rightSlide");
+
+        function left() {
+            if (index != 1) {
+                document.getElementById("page" + index).style.display = "none";
+                index = index - 1;
+                document.getElementById("page" + index).style.display = "block";
+            }
+            else {
+                document.getElementById("page" + index).style.display = "none";
+                index = max;
+                document.getElementById("page" + index).style.display = "block";
+            }
+        }
+        function right() {
+            if (index != max) {
+                document.getElementById("page" + index).style.display = "none";
+                index = index + 1;
+                document.getElementById("page" + index).style.display = "block";
+            }
+            else {
+                document.getElementById("page" + index).style.display = "none";
+                index = 1;
+                document.getElementById("page" + index).style.display = "block";
+            }
+        }
+        //End
+
+        //Change the arrow on screen resize..Start
+        var width = window.innerWidth;
+        if (width <= 425) {
+            x.innerHTML = "keyboard_arrow_up";
+            y.innerHTML = "keyboard_arrow_down";
+        }
+        //End
+
+
+
+    </script>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+</body>
